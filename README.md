@@ -1,11 +1,8 @@
-# nmcli-gen
+🔥 New tool: **nmcli-gen**  
+Generate reproducible NetworkManager profiles from a simple YAML spec.
 
-`nmcli-gen` is a small offline helper tool that generates an idempotent `nmcli` shell script from a simple YAML spec.
-
-You describe your NetworkManager profiles (Wi-Fi / Ethernet, IPv4/IPv6, policies…) in YAML, and `nmcli-gen` produces a ready-to-run `bash` script that creates or updates the corresponding profiles.
-
-The full tool (Python script + examples) is available as a paid download on Gumroad:  
-👉 https://netli.gumroad.com/l/nmcligen
+👉 Download the pre-packaged version (with examples + helper tools) on Gumroad:  
+https://netli.gumroad.com/l/nmcligen
 
 ---
 
