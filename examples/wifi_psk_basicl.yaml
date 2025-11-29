@@ -1,0 +1,15 @@
+connections:
+  - id: wifi-psk
+    type: wifi
+    iface: wlan0
+    autoconnect: true
+
+    wifi:
+      ssid: "MySSID"
+      psk: "s3cr3t"
+      powersave: 0
+
+    ipv4:
+      method: auto
+    ipv6:
+      method: disabled
