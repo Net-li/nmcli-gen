@@ -1,8 +1,13 @@
 🔥 New tool: **nmcli-gen**  
-Generate reproducible NetworkManager profiles from a simple YAML spec.
+Generate fully-idempotent NetworkManager profiles from a simple YAML specification.
+No manual nmcli work. No guesswork. One YAML → one shell script.
 
-👉 Download the pre-packaged version (with examples + helper tools) on Gumroad:  
-https://netli.gumroad.com/l/nmcligen
+This repository contains:
+
+A clean public description of what the tool does
+YAML examples you can freely inspect
+A link to the commercial version on Gumroad (which contains the generator script)
+👉 The actual Python generator is not published here.
 
 ---
 
@@ -48,9 +53,14 @@ Hand-editing `.nmconnection` files or re-creating NetworkManager profiles by han
 
 ---
 
+🧩 Why YAML?
+Because YAML is cleaner than:
+  - long nmcli con modify ... strings
+  - half-broken .nmconnection templates
+  - trial-and-error every time you ship a Wi-Fi profile to an embedded device
+
 ## YAML snippet example
 
-```yaml
 connections:
   - id: eth-dhcp
     type: ethernet
@@ -116,9 +126,17 @@ The full Python generator, with all options and examples, is available on Gumroa
 You get:
 
 nmcli-gen.py (Python 3 script)
-
 example YAML files (Ethernet + Wi-Fi)
-
 usage notes
-
 ready-to-run generated scripts
+
+
+🧭 Roadmap (public)
+
+These are not included in v1, but planned:
+                                Feature	Status
+EAP / 802.1X	                      planned
+WPA-Enterprise	                    planned
+Hotspot/AP mode	                    planned
+VLAN profiles	                      planned
+Connection monitoring / diagnostics	planned
