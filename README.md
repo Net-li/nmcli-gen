@@ -86,11 +86,14 @@ connections:
       ssid: "MySSID"
     
       psk: "s3cr3t"
+    
       powersave: 0
+    
       scan_random: true
 
     ipv4:
       method: auto
+    
     ipv6:
       method: disabled
 
