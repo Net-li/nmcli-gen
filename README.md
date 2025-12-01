@@ -84,6 +84,7 @@ connections:
 
     wifi:
       ssid: "MySSID"
+    
       psk: "s3cr3t"
       powersave: 0
       scan_random: true
