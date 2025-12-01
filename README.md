@@ -108,8 +108,6 @@ do() {
     "$@"
   fi
 }
-
-# --- eth-dhcp ---
 do nmcli con delete "eth-dhcp" || true
 do nmcli con add type ethernet ifname "enp0s3" con-name "eth-dhcp"
 do nmcli con modify "eth-dhcp" connection.autoconnect yes
