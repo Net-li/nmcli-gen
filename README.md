@@ -117,18 +117,18 @@ do nmcli con add type ethernet ifname "enp0s3" con-name "eth-dhcp"
 do nmcli con modify "eth-dhcp" connection.autoconnect yes
 do nmcli con modify "eth-dhcp" ipv4.method auto
 do nmcli con modify "eth-dhcp" ipv4.route-metric 200
-do nmcli con up "eth-dhcp" || true
+do nmcli con up "eth-dhcp" || true 
 
-How to get nmcli-gen
+# How to get nmcli-gen
 
 The full Python generator, with all options and examples, is available on Gumroad:
 
 👉 https://netli.gumroad.com/l/nmcligen
 
-You get:
+# You get:
 
 nmcli-gen.py (Python 3 script)
-example YAML files (Ethernet + Wi-Fi)
+example YAML files (Ethernet + Wi-Fi + one full template)
 usage notes
 ready-to-run generated scripts
 
