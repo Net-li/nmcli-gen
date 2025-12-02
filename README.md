@@ -1,4 +1,5 @@
 🔥 New tool: **nmcli-gen**  (https://netli.gumroad.com/l/nmcligen)
+
 Generate fully-idempotent NetworkManager profiles from a simple YAML specification.
 No manual nmcli work. No guesswork. One YAML → one shell script.
 
